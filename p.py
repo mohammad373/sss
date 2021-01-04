@@ -39,7 +39,7 @@ def __target__():
         r2 = target + "/" + i
         r3 = requests.get(r2)
         if r3.status_code == 200:
-            print(Forre.GREEN + "[+] ~ " + Fore.GREEN + r2)
+            print(Fore.GREEN + "[+] ~ " + Fore.GREEN + r2)
         else:
             print(Fore.RED + "[-] ~ " + Fore.RED + r2)
 __target__()
